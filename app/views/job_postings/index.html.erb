@@ -1,0 +1,8 @@
+<h1> Job Postings </h1>
+
+<% @job_postings.each do |post| %>
+  <h2> Job title: <%= post.title %> </h2>
+  <p> Company: <%= post.company %> </p>
+  <p> Salary: $<%= post.salary %> </p>
+  <p> Location: <%= post.location ? "in-house" : "remote" %> </p>
+<% end %>

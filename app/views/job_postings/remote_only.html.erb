@@ -1,8 +1,8 @@
 <h1> Remote Postings </h1>
 
 <% @remote_jobs.each do |post|%>
-  <h2> Job title: <%= post:title %> </h2>
-  <p> Company: <%= post:company %> </p>
-  <p> Salary: $<%= post:salary %> </p>
-  <p> Location: <%= post:location ? "in-house" : "remote" %> </p>
+  <h2> Job title: <%= post.title %> </h2>
+  <p> Company: <%= post.company %> </p>
+  <p> Salary: $<%= post.salary %> </p>
+  <p> Location: <%= post.location ? "in-house" : "remote" %> </p>
 <% end %>
